@@ -11,7 +11,8 @@
   display:flex;
   flex-flow:row;
 }
-#main > .MainContent{
+/* #main > */
+ .MainContent{
   margin: 4px;
   padding: 5px;
   flex:3 1 60%;
@@ -19,18 +20,22 @@
   order: 2;
 }
 
-#main > .MainContent h4{
+/* #main > */
+ .MainContent h4{
   margin-bottom:0;
   text-align: left;
 }
-#main > .MainContent video{
+/* #main > */
+ .MainContent video{
   display:block;
   margin:0 auto;
 }
-#main > .MainContent a:link{
+/* #main > */
+ .MainContent a:link{
   color:red;
 }
-#main > .left{
+/* #main > */
+ .left{
   margin:4px;
   padding:5px;
   border:1px solid black;
@@ -38,7 +43,8 @@
   flex:1 6 20%;
   order: 1;
 }
-#main > .Nav{
+/* #main > */
+ .Nav{
   margin:4px;
   padding:5px;
   border:1px solid black;
