@@ -3,8 +3,8 @@ import MainContent from './Components/MainContent.js';
 import Header from './Components/Header.js';
 import Footer from './Components/Footer.js';
 import Nav from './Components/Nav.js';
-import BlogPostItem from './Components/BlogPostItem.js';
-import BlogPosts from './Components/BlogPosts.js';
+// import BlogPostItem from './Components/BlogPostItem.js';
+// import BlogPosts from './Components/BlogPosts.js';
 import './App.css';
 
 class App extends Component {
@@ -38,8 +38,10 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <MainContent maincontents = {this.state.maincontents}/>
-        <Nav/>
+        <div className="wrapper">
+          <MainContent maincontents = {this.state.maincontents}/>
+          <Nav/>
+        </div>
         <Footer />
       </div>
     );

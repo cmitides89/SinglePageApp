@@ -3,7 +3,12 @@ class Nav extends Component{
     render(){
         return(
             <div className = "Nav">
-                <li>your moms puss</li>
+                <ul>
+                    <li>your moms puss</li>
+                    <li>your moms puss</li>
+                    <li>your moms puss</li>
+                    <li>your moms puss</li>
+                </ul>
             </div>
         );
     }

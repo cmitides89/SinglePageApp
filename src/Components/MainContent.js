@@ -12,7 +12,7 @@ class MainContent extends Component{
         }
     
         return(
-            <div className="MainContent" idName="main">
+            <div className="MainContent">
             {/*in here we will have each blogpost*/}
             {blogPostItems}
             </div>
