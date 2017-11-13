@@ -4,10 +4,10 @@ class Nav extends Component{
         return(
             <div className = "Nav">
                 <ul>
-                    <li>your moms puss</li>
-                    <li>your moms puss</li>
-                    <li>your moms puss</li>
-                    <li>your moms puss</li>
+                    <li><a href="#">URL Place Holder</a></li>
+                    <li><a href="">URL Place Holder</a></li>
+                    <li><a href="#">URL Place Holder</a></li>
+                    <li><a href="#">URL Place Holder</a></li>
                 </ul>
             </div>
         );

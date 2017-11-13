@@ -3,6 +3,7 @@ import MainContent from './Components/MainContent.js';
 import Header from './Components/Header.js';
 import Footer from './Components/Footer.js';
 import Nav from './Components/Nav.js';
+import 'reset-css/reset.css';
 // import BlogPostItem from './Components/BlogPostItem.js';
 // import BlogPosts from './Components/BlogPosts.js';
 import './App.css';
@@ -37,12 +38,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        
         <Header />
         <div className="wrapper">
           <MainContent maincontents = {this.state.maincontents}/>
           <Nav/>
         </div>
         <Footer />
+        
       </div>
     );
   }

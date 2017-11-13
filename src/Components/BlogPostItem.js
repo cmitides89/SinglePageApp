@@ -5,7 +5,7 @@ class BlogPostItem extends Component{
         return(
             <div className ="BlogPost">
                 <h1 className="title">{this.props.maincontents.title}</h1>
-                <p>{this.props.maincontents.date}</p>
+                <p className="blogDate">{this.props.maincontents.date}</p>
                 <p>{this.props.maincontents.body}</p>
             </div>
         );

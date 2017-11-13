@@ -1,102 +1,96 @@
-/* think of the APP class as the body in this case */
 @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400');
-.App {
-  text-align: center;
-  font-family:'Yanone Kaffeesatz', sans-serif;
-  /* min-height:800px;
-  margin:0;
-  padding:0;
-  display:flex;
-  flex-flow:row; */
+.App{
+  height:100%;
 }
-/* #main */
+body{
+  font-family:'Yanone Kaffeesatz', sans-serif;
+}
 .wrapper{
-  min-height:700px;
+  min-height:800px;
   margin:0;
   padding:0;
   display:flex;
   flex-flow:row;
+  width:100%;
+  border-top:1px black solid;
 }
-/* #main > */
- .MainContent{
+.wrapper > .MainContent{
   margin: 4px;
   padding: 5px;
-  flex:3 1 60%;
+  flex:3 1 70%;
+  /* flex:5; */
   align-content:center;
   order: 1;
+  
 }
 
-/* #main > */
- .MainContent h4{
+.wrapper > .MainContent h4{
   margin-bottom:0;
   text-align: left;
 }
-/* #main > */
- .MainContent video{
-  display:block;
-  margin:0 auto;
+
+.wrapper > .Nav a:link{
+  color:#801515;
 }
-/* #main > */
- .MainContent a:link{
-  color:red;
-}
-/* #main > */
- .left{
+.wrapper > .Nav{
   margin:4px;
   padding:5px;
-  border:1px solid black;
-  border-radius:7pt;
+  padding-top:25px;
+  border-left:2px dotted #550000;
+  /* border-radius:7pt; */
   flex:1 6 20%;
-  order: 1;
-}
-/* #main > */
- .Nav{
-  margin:4px;
-  padding:5px;
-  border:1px solid black;
-  border-radius:7pt;
-  flex:1 6 20%;
+  /* flex:1; */
   order: 2;
 }
-Header, Footer{
-  display:block;
-  margin:4px;
-  /*padding:5px;*/
-  min-height:300px;
-
-  /*border-radius:7pt;*/
+.Header{
+  min-height:100px;
+  background-color:#AA3939;
 }
-Footer{
-  border-radius:7pt;
-  border:1px solid black;
-  padding-top:20px;
+.Header h1{
+  font-size: 45px;
   text-align: center;
+  color:#FFAAAA;
 }
-form{
-  width:45%;
+.Header, .Footer{
+  display:flex;
+  /* margin:4px; */
+  /*padding:5px;*/
+  
+  flex:1 100%;
+  /* border-radius:7pt; */
+}
+.Footer{
+  /* border-radius:7pt; */
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  padding-top:5px;
+  text-align: center;
+  background-color:#FFAAAA;
+  font-size: 1em;
+  text-align: center;
+  min-height:40px;
+}
+.Footer h4{
   margin:0 auto;
 }
-form > input, form > button{
-  width:100%;
-  height:50px;
-  font-size:16px;
-  text-align:center;
-}
+
 ul li{
   list-style-type: none;
   margin-bottom:25px;
   /*border-bottom:1px dotted black;*/
 
 }
-.left > ul li, .Nav > ul li{
-  border-bottom:1px dotted black;
+.Nav > ul li{
+  border-bottom:1px solid #550000;
+  text-align: right;
+  font-size:30px;
 }
 a:link {
   color:black;
   text-decoration:none;
 }
 a:visited{
-  color:red;
+  color:#AA3939;
 }
 a:hover{
   font-style: oblique;
@@ -112,4 +106,20 @@ p{
 }
 div.MainContent :nth-child(5){
   margin-bottom:50px;
+}
+.BlogPost{
+  width:100%;
+  margin-bottom:35px;
+}
+.BlogPost p{
+  font-size: 2em;
+}
+.BlogPost .blogDate{
+  color:#D46A6A;
+
+}
+.BlogPost .title{
+  color:#550000;
+  font-size:3em;
+  margin-bottom:15px;
 }
