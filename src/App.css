@@ -1,28 +1,103 @@
+/* think of the APP class as the body in this case */
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400');
 .App {
   text-align: center;
+  font-family:'Yanone Kaffeesatz', sans-serif;
+}
+#main{
+  min-height:800px;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-flow:row;
+}
+#main > .MainContent{
+  margin: 4px;
+  padding: 5px;
+  flex:3 1 60%;
+  align-content:center;
+  order: 2;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#main > .MainContent h4{
+  margin-bottom:0;
+  text-align: left;
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+#main > .MainContent video{
+  display:block;
+  margin:0 auto;
 }
-
-.App-title {
-  font-size: 1.5em;
+#main > .MainContent a:link{
+  color:red;
 }
-
-.App-intro {
-  font-size: large;
+#main > .left{
+  margin:4px;
+  padding:5px;
+  border:1px solid black;
+  border-radius:7pt;
+  flex:1 6 20%;
+  order: 1;
 }
+#main > .Nav{
+  margin:4px;
+  padding:5px;
+  border:1px solid black;
+  border-radius:7pt;
+  flex:1 6 20%;
+  order: 3;
+}
+Header, Footer{
+  display:block;
+  margin:4px;
+  /*padding:5px;*/
+  min-height:100px;
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  /*border-radius:7pt;*/
+}
+Footer{
+  border-radius:7pt;
+  border:1px solid black;
+  padding-top:20px;
+  text-align: center;
+}
+form{
+  width:45%;
+  margin:0 auto;
+}
+form > input, form > button{
+  width:100%;
+  height:50px;
+  font-size:16px;
+  text-align:center;
+}
+ul li{
+  list-style-type: none;
+  margin-bottom:25px;
+  /*border-bottom:1px dotted black;*/
+
+}
+.left > ul li, .Nav > ul li{
+  border-bottom:1px dotted black;
+}
+a:link {
+  color:black;
+  text-decoration:none;
+}
+a:visited{
+  color:red;
+}
+a:hover{
+  font-style: oblique;
+}
+/*body{
+  max-width: 900px;
+  margin: 0 auto;
+  border-left: solid gray 1px;
+}*/
+
+p{
+  text-indent:15px;
+}
+div.MainContent :nth-child(5){
+  margin-bottom:50px;
 }
