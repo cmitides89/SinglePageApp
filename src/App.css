@@ -49,6 +49,7 @@ body{
 .Header h1{
   font-size: 45px;
   text-align: center;
+  margin:0 auto;
   color:#FFAAAA;
 }
 .Header, .Footer{
