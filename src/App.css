@@ -45,11 +45,13 @@ body{
 .Header{
   min-height:100px;
   background-color:#AA3939;
+  padding-top:25px;
 }
 .Header h1{
   font-size: 45px;
   text-align: center;
   color:#FFAAAA;
+  margin:0 auto;
 }
 .Header, .Footer{
   display:flex;
